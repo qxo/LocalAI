@@ -19,7 +19,6 @@ func RegisterLocalAIRoutes(router *fiber.App,
 	ml *model.ModelLoader,
 	appConfig *config.ApplicationConfig,
 	galleryService *services.GalleryService) {
-
 	router.Get("/swagger/*", swagger.HandlerDefault) // default
 
 	// LocalAI API endpoints
